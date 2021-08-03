@@ -52,7 +52,7 @@ namespace API.Data.Migrations
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
-                name: "KnownAs",
+                name: "KnowAs",
                 table: "Users",
                 type: "TEXT",
                 nullable: true);
