@@ -15,7 +15,7 @@ namespace API.Controllers
         }
 
         [Authorize]
-        [HttpGet("auth")]
+            [HttpGet("auth")]
         public ActionResult<string> GetSecret()
         {
             return "secret text";
@@ -44,7 +44,7 @@ namespace API.Controllers
            [HttpGet("bad-request")]
         public ActionResult<string> GetBadRequest()
         {
-            return BadRequest();
+            return BadRequest("This was not a good request");
         }
     }
 }
